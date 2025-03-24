@@ -5,12 +5,12 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {
-    let response = file_extract("./src/data.aoc");
+    let response = file_extract("../data.aoc");
 
     match response {
         Ok(numbers) => {
             let sum: i32 = numbers.iter().sum();
-            println!("Response: {:?}, Sum: {}", numbers, sum);
+            println!("Response: {:?},\nSum: {}", numbers, sum);
         }
         Err(e) => {
             eprintln!("Error: {}", e);
