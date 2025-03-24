@@ -1,0 +1,4 @@
+*.aoc
+target
+debug/
+**/*.rs.bk
